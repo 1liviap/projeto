@@ -1,0 +1,206 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body,
+html {
+  height: 100%;
+  width: 100%;
+  background: #c9ece5;
+  background-size: cover;
+  color: #fff;
+}
+
+/* Header */
+header.main-header {
+  width: 100%; /* Ocupa toda a largura da tela */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.7); /* Fundo semi-transparente */
+  z-index: 10;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-icon {
+  width: 50px;
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+}
+
+/* Navegação */
+.nav-links a {
+  color: #fff;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.search-login {
+  display: flex;
+  align-items: center;
+}
+
+.search-login input {
+  padding: 5px 10px;
+  border-radius: 15px;
+  border: none;
+}
+
+.login-button {
+  background-color: #4c4c4c;
+  color: #fff;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 20px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+/* Conteúdo principal */
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 120px 20px 20px; /* Adiciona espaçamento superior para o header */
+}
+
+.intro h2 {
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.intro p {
+  max-width: 500px;
+  margin-top: 15px;
+  margin-bottom: 30px;
+}
+
+.login-cta {
+  background-color: #a8e7da;
+  color: #333;
+  padding: 12px 25px;
+  border-radius: 25px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.3s;
+}
+
+.login-cta:hover {
+  background-color: #89c8b3;
+}
+
+/* Carrossel */
+.carousel-container {
+  width: 100%; /* Ocupa toda a largura do site */
+  max-width: 100%;
+  position: relative;
+  overflow: hidden;
+  margin-top: 20px;
+}
+
+.carousel-track-container {
+  overflow: hidden;
+  width: 100%;
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  width: 100%;
+}
+
+.carousel-card {
+  min-width: 100%; /* Cada cartão ocupa 100% da largura da tela */
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.carousel-card img {
+  width: 100%; /* Ajusta a imagem para ocupar toda a largura do cartão */
+  height: 700px;
+  border-radius: 10px;
+}
+
+.carousel-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 24px;
+  z-index: 10;
+}
+
+.carousel-button.prev {
+  left: 10px;
+}
+
+.carousel-button.next {
+  right: 10px;
+}
+
+/* Botões de login */
+button {
+  padding: 12px 0;
+  border: none;
+  border-radius: 25px;
+  background-color: #a8e7da;
+  color: #fff;
+  font-size: 18px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #89c8b3;
+}
+
+.help-link {
+  margin-top: 20px;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.carousel-card {
+  position: relative;
+}
+
+.carousel-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+/* Fundo semi-transparente para melhor contraste */
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 100px; /* Tamanho da fonte ajustado */
+  font-weight: bold;
+  text-align: center;
+  border-radius: 10px;
+}
+

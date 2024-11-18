@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página Inicial - Rio de Janeiro</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <header class="main-header">
+    <div class="logo">
+      <img src="img/logo.png" alt="Ícone Cristo" class="logo-icon">
+      <h1>Rio de Janeiro</h1>
+    </div>
+    <nav class="nav-links">
+      <a href="#">Início</a>
+      <a href="#">Praias</a>
+      <a href="#">Contatos</a>
+      <a href="#">Sobre</a>
+    </nav>
+    <div class="search-login">
+      <input type="text" placeholder="Buscar...">
+      <button class="login-button" onclick="goToLogin()">Login</button>
+    </div>
+  </header>
+
+  <section class="carousel">
+  <div class="carousel-container">
+    <button class="carousel-button prev" onclick="moveCarousel(-1)">&#10094;</button>
+
+    <div class="carousel-track-container">
+      <ul class="carousel-track">
+        <li class="carousel-card">
+          <img src="img/copacabana.webp" alt="Copacabana">
+          <div class="carousel-title">COPACABANA</div>
+        </li>
+        <li class="carousel-card">
+          <img src="img/ipanema.webp" alt="Ipanema">
+          <div class="carousel-title">IPANEMA</div>
+        </li>
+        <li class="carousel-card">
+          <img src="img/leblon.webp" alt="Leblon">
+          <div class="carousel-title">LEBLON</div>
+        </li>
+        <!-- Adicione mais cartões aqui -->
+      </ul>
+    </div>
+
+    <button class="carousel-button next" onclick="moveCarousel(1)">&#10095;</button>
+  </div>
+</section>
+
+
+<div id="login-modal" class="login-modal" style="display: none;">
+  <div class="login-content">
+    <span class="close-button" onclick="closeLogin()">&times;</span>
+    <h2>Login</h2>
+    <form onsubmit="return handleLogin(event)">
+      <input type="text" id="username" placeholder="Usuário" required>
+      <input type="password" id="password" placeholder="Senha" required>
+      <button type="submit">Entrar</button>
+    </form>
+    <p id="login-message" class="login-message"></p>
+  </div>
+</div>
+
+<div class="container">
+        <h1>Continue Descendo!</h1>
+        <p>Esta é uma simples seção de texto que serve para mostrar como o conteúdo pode ser exibido em uma página. Aqui você pode adicionar mais informações, links ou qualquer outro conteúdo que deseje, criando assim uma navegação contínua para o seu site. Use a rolagem para ver mais.</p>
+        <button class="continue" onclick="window.scrollBy(0, 600)">Desça para mais conteúdo</button>
+</div>
+
+  <script src="script.js"></script>
+</body>
+</html>

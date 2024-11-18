@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <div class="container">
+    <header class="loginheader">
+      <div class="logo">
+        <img src="img/logo.png" alt="Logo" class="logo-icon">
+        <div>
+          <h1>Rio de Janeiro</h1>
+          <p>IFSP Caraguatatuba</p>
+        </div>
+      </div>
+      <div class="menu-icon">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </header>
+    <main>
+      <h2>Contêiner<br>Rio de Janeiro</h2>
+      <form id="login-form">
+        <div class="input-group">
+          <span><i class="fas fa-user"></i></span>
+          <input type="text" placeholder="Usuário" id="username">
+        </div>
+        <div class="input-group">
+          <span><i class="fas fa-lock"></i></span>
+          <input type="password" placeholder="Senha" id="password">
+        </div>
+        <button type="button" id="login-button">Login</button>
+      </form>
+      <div class="help-link" id="help-link">Precisa de ajuda?</div>
+    </main>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
