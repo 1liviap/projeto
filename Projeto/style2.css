@@ -3,6 +3,7 @@ body, html {
     padding: 0;
     font-family: Arial, sans-serif;
     height: 100%;
+    background-color: #9FCFBB;
 }
 
 .background {
@@ -25,6 +26,7 @@ header {
 header .logo img {
     width: 50px;
 }
+
 
 header nav a {
     margin: 0 15px;
@@ -219,3 +221,223 @@ header .search-login .login {
 .logo:hover {
   cursor: default;
 }
+
+
+.container {
+  max-width: 1200px;
+  margin: 50px auto; /* Centraliza a div e adiciona espaço superior */
+  padding: 20px;
+  background: url('img/praias.png') no-repeat center center; /* Imagem de fundo */
+  background-size: cover;
+  background-color: rgba(255, 255, 255, 0.8); /* Fundo semitransparente */
+  border-radius: 15px; /* Cantos arredondados */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Sombra suave */
+  text-align: center;
+}
+
+.title {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: #a6f0ff;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-around; /* Espaçamento entre os cards */
+  flex-wrap: wrap; /* Permite que os cards se ajustem em telas menores */
+  gap: 20px; /* Espaçamento entre os cards */
+}
+
+.card {
+  background-color: rgba(255, 255, 255, 0.8); /* Fundo branco com 80% de opacidade */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave */
+  width: 200px; /* Largura fixa */
+  padding: 15px;
+  text-align: center;
+  transition: transform 0.2s ease; /* Efeito ao passar o mouse */
+}
+
+.card:hover {
+  transform: scale(1.05); /* Aumenta ligeiramente o tamanho ao passar o mouse */
+}
+
+
+.card h2 {
+  font-size: 1.5em;
+  margin: 10px 0;
+}
+
+.card p {
+  margin: 5px 0;
+  font-size: 1em;
+}
+
+.status {
+  font-weight: bold;
+}
+
+.status.propria {
+  color: green;
+}
+
+.status.impropria {
+  color: red;
+}
+
+.card a {
+  color: #0077cc;
+  text-decoration: none;
+}
+
+.card a:hover {
+  text-decoration: underline;
+}
+
+.title {
+  font-size: 36px;
+  color: #6bffb7; /* Azul suave */
+  margin-bottom: 30px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Adiciona sombra no texto */
+}
+
+button {
+  background-color: #0077b6;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 20px;
+}
+
+button:hover {
+  background-color: #005f73;
+}
+
+@media (max-width: 768px) {
+  .cards {
+    flex-direction: column; /* Empilha os cards em telas pequenas */
+    align-items: center;
+  }
+
+  .card {
+    width: 90%; /* Aumenta a largura dos cards para caber na tela */
+  }
+
+  .container {
+    padding: 10px; /* Reduz as margens internas */
+  }
+}
+
+
+/* produtos */
+/* Geral */
+
+/* Fundo geral */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to bottom, #eaf8f1, #b8dfd8);
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+/* Títulos */
+h2 {
+  font-size: 30px;
+  color: #2d6a4f;
+  text-align: center;
+  margin: 30px 0 10px;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+}
+
+
+
+/* Grid de itens */
+.items-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+  padding: 0 40px;
+  margin: 0 auto;
+  max-width: 1200px;
+  
+}
+
+/* Card de produtos */
+.item {
+  background-color: white;
+  border-radius: 15px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Imagem no card */
+.item img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  margin-bottom: 15px;
+  border-radius: 50%;
+  border: 2px solid #2d6a4f;
+  transition: transform 0.3s ease;
+}
+
+.item:hover img {
+  transform: scale(1.1);
+}
+
+/* Texto do card */
+.item h3 {
+  font-size: 18px;
+  color: #2d6a4f;
+  margin-bottom: 10px;
+}
+
+.item span {
+  display: block;
+  font-size: 16px;
+  color: #444;
+  margin-top: 5px;
+  font-weight: bold;
+  
+}
+
+/* Efeito ao passar o mouse */
+.item:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .items-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .items-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.product-items{
+  background-color: rgba(255, 255, 255, 0.8); /* Fundo semitransparente */ 
+}
+

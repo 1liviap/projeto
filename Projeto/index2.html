@@ -16,8 +16,8 @@
   <nav class="menu">
     <ul>
       <li><i class="fas fa-home"></i> Home</li>
-      <li><i class="fas fa-info-circle"></i> Sobre</li>
-      <li><i class="fas fa-phone-alt"></i> Contato</li>
+      <li><i class="fas fa-info-circle"></i> Praias</li>
+      <li><i class="fas fa-phone-alt"></i> Produtos</li>
     </ul>
     <!-- Adicionando barra de pesquisa -->
     <div class="search">
@@ -42,13 +42,76 @@
             <section class="carousel">
                 <button class="prev">⬅</button>
                 <div class="carousel-images">
-                    <img src="img/copacabana.webp" alt="Imagem da Torre Eiffel" class="active">
-                    <img src="img/ipanema.webp" alt="Imagem do Japão">
-                    <img src="img/leblon.webp" alt="Imagem de uma praia">
+                    <img src="img/mapacopa.png" alt="Imagem da Torre Eiffel" class="active">
+                    <img src="img/mapaipa.png" alt="Imagem do Japão">
+                    <img src="img/mapale2.png" alt="Imagem de uma praia">
                 </div>
                 <button class="next">➡</button>
             </section>
         </main>
     </div>
+   
+  <div class="container">
+    <h1 class="title">PRAIAS</h1>
+    <div class="cards">
+      <div class="card" id="copacabana-card">
+        <img src="img/copa.jpg" alt="Praia de Copacabana" width="200px" height="170px">
+        <h2>Copacabana</h2>
+        <p>Para banho: <span class="status" id="copacabana-status">própria</span></p>
+        <p>Clima: <span id="copacabana-temp">24°C</span></p>
+        <p>Mapa-guia: <a href="#">Abrir</a></p>
+      </div>
+      <div class="card" id="ipanema-card">
+        <img src="img/ipane.webp" alt="Praia de Ipanema" width="200px" height="170px">
+        <h2>Ipanema</h2>
+        <p>Para banho: <span class="status" id="ipanema-status">própria</span></p>
+        <p>Clima: <span id="ipanema-temp">24°C</span></p>
+        <p>Mapa-guia: <a href="#">Abrir</a></p>
+      </div>
+      <div class="card" id="leblon-card">
+        <img src="img/leb.webp" alt="Praia de Leblon" width="200px" height="170px">
+        <h2>Leblon</h2>
+        <p>Para banho: <span class="status" id="leblon-status">imprópria</span></p>
+        <p>Clima: <span id="leblon-temp">24°C</span></p>
+        <p>Mapa-guia: <a href="#">Abrir</a></p>
+      </div>
+    </div>
+    <button onclick="alterarInformacoes()">Alterar Informações</button>
+  </div>
+
+
+<section class="product-items">
+  <h2>Itens Disponíveis</h2>
+  <p>Confira os produtos disponíveis no container.</p>
+  <div class="items-grid">
+    <!-- Produto 1 -->
+    <div class="item">
+      <img src="img/protetor.webp" alt="Protetor Solar">
+      <h3>Protetor Solar</h3>
+      <span>R$49,99</span>
+    </div>
+    <!-- Produto 2 -->
+    <div class="item">
+      <img src="img/pos.webp" alt="Pós Sol">
+      <h3>Pós Sol</h3>
+      <span>R$99,90</span>
+    </div>
+    <!-- Produto 3 -->
+    <div class="item">
+      <img src="img/repelente.png" alt="Repelente">
+      <h3>Repelente</h3>
+      <span>R$19,99</span>
+    </div>
+    <!-- Produto 4 -->
+    <div class="item">
+      <img src="img/cabelo.webp" alt="Carregador Portátil">
+      <h3>Protetor Solar Capilar</h3>
+      <span>R$199,90</span>
+    </div>
+  </div>
+</section>
+
+  <script src="script.js"></script>
+
 </body>
 </html>

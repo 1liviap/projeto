@@ -85,6 +85,7 @@ form {
   gap: 15px;
 }
 
+/* Ajuste geral dos campos de entrada */
 .input-group {
   display: flex;
   align-items: center;
@@ -94,11 +95,6 @@ form {
   color: #888;
 }
 
-.input-group span {
-  color: #888;
-  font-size: 18px;
-}
-
 .input-group input {
   border: none;
   outline: none;
@@ -106,7 +102,27 @@ form {
   padding-left: 10px;
   font-size: 16px;
   color: #333;
+  background: none; /* Para manter o fundo transparente */
 }
+
+/* Ícones no grupo de entrada */
+.input-group span {
+  color: #888;
+  font-size: 18px;
+}
+
+/* Estilo do campo de seleção (select) */
+.input-group select {
+  border: none;
+  outline: none;
+  flex: 1;
+  font-size: 16px;
+  color: #333;
+  background: none;
+  padding-left: 10px;
+}
+
+
 
 button {
   padding: 12px 0;
@@ -128,4 +144,10 @@ button:hover {
   margin-top: 20px;
   font-size: 14px;
   color: rgba(255, 255, 255, 0.8);
+}
+
+.info-text {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.9); /* Ajuste de cor para destacar no fundo */
+  margin: 10px 0; /* Espaçamento entre a frase e os campos */
 }

@@ -26,16 +26,42 @@
     <main>
       <h2>Contêiner<br>Rio de Janeiro</h2>
       <form id="login-form">
-        <div class="input-group">
-          <span><i class="fas fa-user"></i></span>
-          <input type="text" placeholder="Usuário" id="username">
-        </div>
-        <div class="input-group">
-          <span><i class="fas fa-lock"></i></span>
-          <input type="password" placeholder="Senha" id="password">
-        </div>
-        <button type="button" id="login-button">Login</button>
-      </form>
+  <div class="input-group">
+    <span><i class="fas fa-user"></i></span>
+    <input type="text" placeholder="Usuário" id="username">
+  </div>
+  <div class="input-group">
+    <span><i class="fas fa-lock"></i></span>
+    <input type="password" placeholder="Senha" id="password">
+  </div>
+
+  <!-- Frase informativa -->
+  <p class="info-text">Agende o aluguel de cadeiras, guarda-sóis e outros itens para sua praia favorita.</p>
+
+  <div class="input-group">
+    <span><i class="fas fa-calendar-alt"></i></span>
+    <input type="date" id="date">
+  </div>
+  <div class="input-group">
+    <span><i class="fas fa-clock"></i></span>
+    <input type="time" id="time">
+  </div>
+  
+  <!-- Campo de seleção de local -->
+  <div class="input-group">
+    <span><i class="fas fa-map-marker-alt"></i></span>
+    <select id="location">
+      <option value="" disabled selected>Selecione um local</option>
+      <option value="ipanema">Ipanema</option>
+      <option value="leblon">Leblon</option>
+      <option value="copacabana">Copacabana</option>
+    </select>
+  </div>
+
+  <button type="button" id="login-button">Login</button>
+</form>
+
+
       <div class="help-link" id="help-link">Precisa de ajuda?</div>
     </main>
   </div>
