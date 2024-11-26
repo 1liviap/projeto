@@ -8,16 +8,21 @@
     <script src="script2.js" defer></script>
 </head>
 <body>
-    <div class="background">
-<header>
+    <div class="background" id="background">
+<header class="menu2">
   <div class="logo">
     <img src="img/logo.png" alt="Logo" class="logo-icon">
   </div>
-  <nav class="menu">
+    <nav class="menu">
     <ul>
-      <li><i class="fas fa-home"></i> Home</li>
-      <li><i class="fas fa-info-circle"></i> Praias</li>
-      <li><i class="fas fa-phone-alt"></i> Produtos</li>
+      <!-- Link para a seção "Home" -->
+      <li><a href="#background"><i class="fas fa-home"></i> Home</a></li>
+
+      <!-- Link para a seção "Praias" -->
+      <li><a href="#praias"><i class="fas fa-info-circle"></i> Praias</a></li>
+
+      <!-- Link para a seção "Produtos" -->
+      <li><a href="#produtos"><i class="fas fa-phone-alt"></i> Produtos</a></li>
     </ul>
     <!-- Adicionando barra de pesquisa -->
     <div class="search">
@@ -25,9 +30,10 @@
       <button id="search-button"><i class="fas fa-search"></i></button>
     </div>
     <!-- Adicionando botão de login -->
-    <button id="login-button">
-      <i class="fas fa-sign-in-alt"></i> Login
-    </button>
+ <button id="login-button" onclick="window.location.href='login.html'">
+  <i class="fas fa-sign-in-alt"></i> Login
+</button>
+
   </nav>
 </header>
 
@@ -48,6 +54,7 @@
                 </div>
                 <button class="next">➡</button>
             </section>
+            <div id="praias"></div>
         </main>
     </div>
    
@@ -81,35 +88,80 @@
 
 
 <section class="product-items">
-  <h2>Itens Disponíveis</h2>
-  <p>Confira os produtos disponíveis no container.</p>
-  <div class="items-grid">
-    <!-- Produto 1 -->
-    <div class="item">
-      <img src="img/protetor.webp" alt="Protetor Solar">
-      <h3>Protetor Solar</h3>
-      <span>R$49,99</span>
+  <div id="produtos"></div>
+    <h2>Itens disponíveis para compra</h2>
+    <p>Confira os produtos disponíveis no container abaixo e escolha o seu!</p>
+    <div class="items-grid">
+        <!-- Produto 1 -->
+        <div class="item">
+            <img src="img/protetor.webp" alt="Protetor Solar">
+            <h3>Protetor Solar</h3>
+            <span>R$49,99</span>
+        </div>
+        <!-- Produto 2 -->
+        <div class="item">
+            <img src="img/pos.webp" alt="Pós Sol">
+            <h3>Pós Sol</h3>
+            <span>R$99,90</span>
+        </div>
+        <!-- Produto 3 -->
+        <div class="item">
+            <img src="img/repelente.png" alt="Repelente">
+            <h3>Repelente</h3>
+            <span>R$19,99</span>
+        </div>
+        <!-- Produto 4 -->
+        <div class="item">
+            <img src="img/cabelo.webp" alt="Protetor Solar Capilar">
+            <h3>Protetor Solar Capilar</h3>
+            <span>R$199,90</span>
+        </div>
     </div>
-    <!-- Produto 2 -->
-    <div class="item">
-      <img src="img/pos.webp" alt="Pós Sol">
-      <h3>Pós Sol</h3>
-      <span>R$99,90</span>
+</section>
+
+<section class="product-items" id="produtos">
+    <h2>Itens disponíveis para aluguel</h2>
+    <div class="items-grid">
+        <!-- Produto 1 -->
+        <div class="item">
+            <img src="img/protetor.webp" alt="Protetor Solar">
+            <h3>Pranchas (tipo: Longboard, Funboard, Shortboard e Stand up)</h3>
+            <span>R$29,99</span>
+        </div>
+        <!-- Produto 2 -->
+        <div class="item">
+            <img src="img/pos.webp" alt="Pós Sol">
+            <h3>Cadeira de praia <p></p></h3>
+            <span>R$9,90</span>
+        </div>
+        <!-- Produto 3 -->
+        <div class="item">
+            <img src="img/repelente.png" alt="Repelente">
+            <h3>Guarda sol</h3>
+            <span>R$19,99</span>
+        </div>
+        <!-- Produto 4 -->
+        <div class="item">
+            <img src="img/cabelo.webp" alt="Protetor Solar Capilar">
+            <h3>Kit 1 guarda sol + 2 cadeiras de praia</h3>
+            <span>R$29,99</span>
+        </div>
     </div>
-    <!-- Produto 3 -->
-    <div class="item">
-      <img src="img/repelente.png" alt="Repelente">
-      <h3>Repelente</h3>
-      <span>R$19,99</span>
-    </div>
-    <!-- Produto 4 -->
-    <div class="item">
-      <img src="img/cabelo.webp" alt="Carregador Portátil">
-      <h3>Protetor Solar Capilar</h3>
-      <span>R$199,90</span>
+</section>
+
+<footer class="footer">
+  <div class="footer-content">
+    <p>&copy; 2024 RIO | Todos os direitos reservados</p>
+    <div class="social-links">
+      <a href="#" class="social-icon">Facebook</a>
+      <a href="#" class="social-icon">Instagram</a>
+      <a href="#" class="social-icon">Twitter</a>
     </div>
   </div>
-</section>
+</footer>
+
+
+
 
   <script src="script.js"></script>
 
