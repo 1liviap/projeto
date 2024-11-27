@@ -26,7 +26,12 @@ header {
 }
 
 header .logo img {
-    width: 50px;
+    width: 70px;
+}
+
+.logo li{
+  list-style-type: none;
+    padding-left: 0; 
 }
 
 
@@ -194,15 +199,15 @@ header .search-login .login {
   background-color: #a8e7da;
   color: #fff;
   border: none;
-  padding: 8px 15px;
+  padding: 10px 25px;
   border-radius: 20px;
   font-size: 16px;
   cursor: pointer;
   display: flex;
   align-items: center;
-  gap: 10px;
   font-weight: bold;
   transition: background-color 0.3s ease;
+  margin-right: 20px;
 }
 
 #login-button:hover {
@@ -305,13 +310,13 @@ header .search-login .login {
 
 .title {
   font-size: 36px;
-  color: #6bffb7; /* Azul suave */
+  color: #9FCFBB;/* Azul suave */
   margin-bottom: 30px;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Adiciona sombra no texto */
 }
 
 button {
-  background-color: #0077b6;
+  background-color: #004f2e;
   color: white;
   border: none;
   border-radius: 5px;
@@ -323,7 +328,7 @@ button {
 }
 
 button:hover {
-  background-color: #005f73;
+  background-color: #9FCFBB;
 }
 
 @media (max-width: 768px) {
